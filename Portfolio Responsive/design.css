@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h1{ font-size: 3.5em}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.194);
+    background-color: rgb(177, 32, 32);
+    color: rgb(242, 242, 242);
+}
+
+button:hover{
+    background-color: rgb(230, 23, 23);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: crimson}
+
+header{
+    background-color: rgb(249, 249, 249);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: crimson;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url("8c7a7812907c2ae6b732fc769d76dc33");
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, .7),
+        rgba(0, 0, 0, .7)
+    )
+    ,url(diet.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+.colores2{
+    color: crimson;
+    
+}
+
+#hero button{
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+
+
+#somosproya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 100px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    margin-bottom: 95px;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+}
+    
+
+#nuestros-programas p{
+    display: none;
+}
+
+.carta h3{
+    margin-top: 50px;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, .7),
+        rgba(0, 0, 0, .7)
+    )
+    ,url(puey.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, .7),
+        rgba(0, 0, 0, .7)
+    )
+    ,url(puerto.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, .7),
+        rgba(0, 0, 0, .7)
+    )
+    ,url(varela.png);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+    font-size: 20px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    height: 80vh;
+}
+
+#final h2{
+    color: white;
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somosproya .container{
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    #somosproya .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center center;
+    }
+
+    #somosproya .img-container{
+    background-image: url(diet2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgb(30, 30, 30, 1);
+    }
+
+    #nuestros-programas button{
+        font-size: 20px;
+    }
+
+    #caracteristicas{
+        background-image: url("pan.jpg");
+        background-repeat: no-repeat;
+        background-size: 700px 500px;
+        background-position: calc(100vw - 800px) 150px;
+    }
+
+    #caracteristicas .img-container{
+    
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+}
+
+    #final{
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)), url("franq.jpeg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #final h2{
+        font-size: 3em;
+        margin-bottom: 60px;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    .resaltado{
+        color: crimson;
+    }
